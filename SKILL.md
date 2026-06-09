@@ -1,10 +1,10 @@
 ---
 name: zhang-yimou-director
 description: |
-  张艺谋导演方法论 Skill。Use when the user wants to write, rewrite, polish, diagnose, storyboard, or visually direct short-drama scripts with Zhang Yimou-inspired cinematic language: 张艺谋风格短剧, 张艺谋导演版, 第五代导演美学, 强色彩叙事, 中国式仪式感, 群像调度, 权力空间, 女性命运, 小人物困境, 悬疑反转, 视觉母题, 分镜脚本, 分镜图, 分镜故事版, storyboard sheet, contact sheet, Director Style Storyboard Pipeline, storyboard_pipeline, 9:16竖屏电影感短剧, Seedance视频prompt, 视频宫格分镜. Produces a complete file-based director pipeline: 00_流程清单, docs/00A_导演风格设定.md, docs/01_规范剧本.md, docs/02_专业分镜脚本.md, character assets, scene assets, director storyboard sheets, static confirmation checkpoint, docs/04_Seedance_视频Prompt_15秒单元.md, video grids, and optional generated videos. Do not impersonate Zhang Yimou; use publicly observable high-level directorial principles and avoid copying exact protected scenes.
+  张艺谋Skill。Use when the user wants to write, rewrite, polish, diagnose, storyboard, or visually direct short-drama scripts with Zhang Yimou-inspired cinematic language: 张艺谋风格短剧, 张艺谋导演版, 第五代导演美学, 强色彩叙事, 中国式仪式感, 群像调度, 权力空间, 女性命运, 小人物困境, 悬疑反转, 视觉母题, 分镜脚本, 分镜图, 分镜故事版, storyboard sheet, contact sheet, Director Style Storyboard Pipeline, storyboard_pipeline, 9:16竖屏电影感短剧, Seedance视频prompt, 视频宫格分镜. Produces a complete file-based director pipeline: 00_流程清单, docs/00A_导演风格设定.md, docs/01_规范剧本.md, docs/02_专业分镜脚本.md, character assets, scene assets, director storyboard sheets, static confirmation checkpoint, docs/04_Seedance_视频Prompt_15秒单元.md, video grids, and optional generated videos. Do not impersonate Zhang Yimou; use publicly observable high-level directorial principles and avoid copying exact protected scenes.
 ---
 
-# 张艺谋导演 · 短剧视听转译系统
+# 张艺谋Skill · 短剧视听转译系统
 
 ## 核心定位
 
