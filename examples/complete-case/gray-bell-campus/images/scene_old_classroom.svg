@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#48535a"/><stop offset="1" stop-color="#151919"/></linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6d0f12"/><stop offset="1" stop-color="#c73b25"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="#efe3cf"/>
+  <text x="800" y="76" text-anchor="middle" font-family="Georgia, 'Noto Serif SC', serif" font-size="42" fill="#2a1a16" font-weight="700">SCENE DESIGN SHEET / 旧教室</text>
+  <text x="800" y="116" text-anchor="middle" font-family="Arial, 'Noto Sans SC'" font-size="22" fill="#6b5846">循环重生空间 · 黄昏冷青光 · 猩红学生卡作为秩序裂缝</text>
+  <g transform="translate(80 155)" filter="url(#shadow)">
+    <rect width="980" height="560" rx="22" fill="#1c2020"/>
+    <rect x="40" y="40" width="900" height="480" fill="#4a4136" stroke="#e5cfa6" stroke-width="5"/>
+    <rect x="62" y="62" width="856" height="90" fill="#313532"/>
+    <g fill="#dfcfb1" stroke="#2a1a16" stroke-width="3">
+      <rect x="90" y="260" width="180" height="66"/><rect x="100" y="326" width="14" height="92"/><rect x="244" y="326" width="14" height="92"/>
+      <rect x="330" y="260" width="180" height="66"/><rect x="340" y="326" width="14" height="92"/><rect x="484" y="326" width="14" height="92"/>
+      <rect x="570" y="260" width="180" height="66"/><rect x="580" y="326" width="14" height="92"/><rect x="724" y="326" width="14" height="92"/>
+      <rect x="180" y="390" width="180" height="66"/><rect x="190" y="456" width="14" height="52"/><rect x="334" y="456" width="14" height="52"/>
+      <rect x="430" y="390" width="180" height="66"/><rect x="440" y="456" width="14" height="52"/><rect x="584" y="456" width="14" height="52"/>
+      <rect x="680" y="390" width="180" height="66"/><rect x="690" y="456" width="14" height="52"/><rect x="834" y="456" width="14" height="52"/>
+    </g>
+    <rect x="84" y="86" width="350" height="40" fill="#111"/><text x="260" y="115" text-anchor="middle" font-family="Arial, 'Noto Sans SC'" font-size="24" fill="#e2d3b5">高三 4 班</text>
+    <rect x="690" y="80" width="160" height="190" fill="url(#sky)" stroke="#e5cfa6" stroke-width="4"/>
+    <path d="M700 178h140M770 82v185" stroke="#e5cfa6" stroke-width="3"/>
+    <circle cx="520" cy="102" r="38" fill="#f1d7a8" stroke="#2a1a16" stroke-width="4"/>
+    <path d="M494 103h30l20-22" stroke="#2a1a16" stroke-width="5" fill="none"/>
+    <rect x="785" y="430" width="70" height="48" rx="6" fill="url(#red)" stroke="#f5dcc2" stroke-width="3"/>
+    <path d="M40 520L940 40" stroke="#f4d29a" stroke-width="18" opacity=".12"/>
+  </g>
+  <g transform="translate(1110 155)">
+    <rect width="410" height="250" rx="18" fill="#f8f0df" stroke="#2a1a16" stroke-width="3"/>
+    <text x="28" y="50" font-family="Arial, 'Noto Sans SC'" font-size="25" fill="#2a1a16" font-weight="700">反打镜头</text>
+    <rect x="38" y="82" width="334" height="120" fill="#4a4136" stroke="#2a1a16" stroke-width="3"/>
+    <path d="M70 188h275M70 150h275M112 86v112M206 86v112M300 86v112" stroke="#dfcfb1" stroke-width="6"/>
+    <circle cx="210" cy="145" r="34" fill="#c73b25" opacity=".9"/>
+    <text x="205" y="232" text-anchor="middle" font-family="Arial" font-size="18" fill="#6b5846">门口看向教室：所有课桌像审判席</text>
+    <rect y="292" width="410" height="250" rx="18" fill="#f8f0df" stroke="#2a1a16" stroke-width="3"/>
+    <text x="28" y="342" font-family="Arial, 'Noto Sans SC'" font-size="25" fill="#2a1a16" font-weight="700">俯视轴线</text>
+    <rect x="42" y="372" width="326" height="116" fill="#d5c2a2" stroke="#2a1a16" stroke-width="3"/>
+    <g fill="#7b5b38"><rect x="72" y="392" width="70" height="28"/><rect x="170" y="392" width="70" height="28"/><rect x="268" y="392" width="70" height="28"/><rect x="72" y="442" width="70" height="28"/><rect x="170" y="442" width="70" height="28"/><rect x="268" y="442" width="70" height="28"/></g>
+    <circle cx="205" cy="430" r="18" fill="#c73b25"/><path d="M205 430L360 378" stroke="#8d1117" stroke-width="5" marker-end="url(#arrow)"/>
+    <text x="205" y="522" text-anchor="middle" font-family="Arial" font-size="18" fill="#6b5846">摄影轴线：红卡 → 黑板 → 门口</text>
+    <rect y="584" width="410" height="180" rx="18" fill="#2b221d"/>
+    <text x="28" y="636" font-family="Arial, 'Noto Sans SC'" font-size="25" fill="#fff4df" font-weight="700">光线/色温</text>
+    <circle cx="78" cy="700" r="30" fill="#f1d7a8"/><circle cx="156" cy="700" r="30" fill="#253f4a"/><circle cx="234" cy="700" r="30" fill="#8d1117"/><circle cx="312" cy="700" r="30" fill="#111"/>
+  </g>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8d1117"/></marker></defs>
+</svg>
