@@ -1,6 +1,6 @@
 <div align="center">
 
-# 张艺谋.skill
+# 张艺谋Skill
 
 <p align="center">
   <img src="assets/hero.svg" alt="zhang-yimou-skill hero" />
@@ -9,193 +9,116 @@
 > *先让冲突可见，再让画面好看。*
 
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Standard-green)](https://agentskills.io)
-[![skills.sh](https://img.shields.io/badge/skills.sh-Compatible-blue)](https://skills.sh)
-[![Runtime](https://img.shields.io/badge/Runtime-Claude%20Code%20·%20Codex%20·%20Cursor%20·%20OpenClaw-blueviolet)](#安装)
-[![Director Pipeline](https://img.shields.io/badge/Output-Script%20·%20Storyboard%20·%20Video%20Prompt-B91C1C)](#输出什么)
+[![Runtime](https://img.shields.io/badge/Runtime-Codex%20·%20Claude%20Code%20·%20OpenClaw%20·%20Hermes-blueviolet)](#安装)
+[![Models](https://img.shields.io/badge/Models-MiniMax%20·%20Kimi%20·%20GLM%20·%20Seedance-B91C1C)](#全模型适配)
 
-<br>
+**张艺谋Skill：把一句短剧灵感轰成导演风格设定、剧本、彩色故事版、3x3九宫格、Seedance视频Prompt、全模型适配和自动剪辑工程。**
 
-**张艺谋启发的导演操作系统。不是风格滤镜，是可运行的短剧导演流程。**
+基于公开作品、公开访谈和可观察影像语言，把强色彩叙事、仪式化调度、群像压迫、空间权力、道具母题，转译成短剧剧本、专业分镜、图片故事版、视频 prompt 和可执行生产清单。
 
-<br>
-
-基于公开作品、公开访谈和可观察影像语言，<br>
-把强色彩叙事、仪式化调度、群像压迫、空间权力、道具母题，<br>
-转译成短剧剧本、专业分镜、故事版和 Seedance 视频 prompt。
-
-[看效果](#效果示例) · [安装](#安装) · [输出什么](#输出什么) · [蒸馏了什么](#蒸馏了什么) · [安全边界](#安全边界)
+[完整图片案例](#完整图片案例) · [输出流程](#输出流程) · [安装](#安装) · [全模型适配](#全模型适配) · [安全边界](#安全边界)
 
 </div>
 
 ---
 
-## 效果示例
+## 完整图片案例
 
-### 问：把“婆婆在婚宴上羞辱儿媳，儿媳反击”做成张艺谋启发的短剧开场。
+仓库已内置一个完整案例：[examples/complete-case/gray-bell-campus](examples/complete-case/gray-bell-campus)。
 
-```text
-张艺谋.skill  ❯ 这个故事真正拍的不是婆媳吵架，而是一个家族如何用婚宴审判一个外来者。
+题材：男主是一名学生，在校园异常循环中醒来，发现一张猩红学生卡成为秩序变化的证据。
 
-                主引擎：仪式即牢笼。
-                副引擎：物件作为判决。
+### 彩色故事版大图
 
-                第一秒，不要先给台词。给一只红色喜碗落在地上，汤汁沿着白瓷砖流开。
-                第二秒，镜头抬起，看到一整桌亲戚同时停筷，所有人的脸都朝向新娘。
-                第三秒，婆婆把红包推回去，只说一句：这钱，我们家不认。
+![灰铃故事版](examples/complete-case/gray-bell-campus/images/storyboard_sheet_01.svg)
 
-                儿媳不要立刻爆发。她先把碎碗捡起来，把手指划破。
-                血滴进红汤里，颜色变深。她抬头，看向门口正在录像的手机。
+### 严格 3x3 九宫格
 
-                反击动作不是吵赢，而是把一张医院病历放到喜桌中央。
-                婚宴从祝福现场，变成公开审判现场。
-```
+![灰铃3x3九宫格](examples/complete-case/gray-bell-campus/images/video_grid_u01_3x3.svg)
 
-> 运用了**仪式化调度**、**群像压迫个体**、**物件反转意义**，把家庭冲突转成可拍的社会压力。
+### 人物、场景、站位图
 
-### 问：我要一个 15 秒投流短剧视频 prompt，竖屏，强钩子。
+| 人物设定图 | 场景设定图 | 站位图 |
+| --- | --- | --- |
+| ![人物设定图](examples/complete-case/gray-bell-campus/images/character_linch_sheet.svg) | ![场景设定图](examples/complete-case/gray-bell-campus/images/scene_old_classroom.svg) | ![站位图](examples/complete-case/gray-bell-campus/images/blocking_u01.svg) |
 
-```text
-张艺谋.skill  ❯ 15 秒不能拍“电影感”，要拍一个能被立刻看懂的权力换位。
-
-                0-3s：竖屏近景，一枚公章悬在辞退通知上方，迟迟不落。
-                3-7s：女工站在玻璃门外，门内七个管理层排成一条直线，像审判席。
-                7-11s：她从布包里拿出旧工牌，工牌背面夹着事故照片。
-                11-15s：公章落下，但盖在事故照片上。办公室里所有人同时沉默。
-
-                色彩：冷白办公室 + 暗红公章 + 褪色蓝工牌。
-                声音：空调低频、印泥摩擦、盖章声骤然放大。
-                竖屏构图：门框把女工压在下三分之一，直到最后一秒她占满中心。
-```
-
-> 运用了**空间先于台词**、**声音压力**、**竖屏压缩规则**，让信息流用户在前 3 秒看懂冲突。
-
-### 问：只给我一个分镜表，不要长篇解释。
-
-| 镜号 | 景别 | 画面 | 运镜 | 声音 | 功能 |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 特写 | 红布下露出半张欠条 | 慢推 | 鼓点一下 | 抛出秘密 |
-| 2 | 中景 | 全家围桌，女主被空椅隔开 | 固定 | 筷子停住 | 建立审判场 |
-| 3 | 近景 | 父亲把钥匙压在欠条上 | 俯拍 | 金属磕桌 | 权力落下 |
-| 4 | 特写 | 女主指尖按住钥匙，不让它滑走 | 静止 | 呼吸声 | 第一次反抗 |
-| 5 | 全景 | 所有人同时转头看她 | 轻微后撤 | 沉默 | 群像压迫 |
-
-> 不是复刻某部电影，而是把“强色彩、仪式、空间、群像、道具”变成短剧生产语言。
+> 这些是仓库内真实图片文件，不是文字占位。故事版可以带镜号和说明；3x3 视频参考图保持无字幕、无镜号、无水印，方便直接投给视频模型。
 
 ---
 
-## 安装
+## 输出流程
 
-本 skill 基于开放的 [Agent Skills](https://agentskills.io) 协议，可在支持 skills 的 AI agent runtime 中运行。
+一个完整短剧项目默认按七步走：
 
-### 方式一：一行命令
-
-```bash
-npx skills add Ye-Zayne/zhang-yimou-skill
-```
-
-### 方式二：手动安装
-
-<details>
-<summary>展开查看常见 runtime 的 skills 目录</summary>
-
-| Runtime | 安装路径 |
+| 阶段 | 输出 |
 | --- | --- |
-| Claude Code | `~/.claude/skills/zhang-yimou-skill/` |
-| Codex CLI | `~/.codex/skills/zhang-yimou-skill/` |
-| Cursor | `~/.cursor/skills/zhang-yimou-skill/` |
-| OpenClaw | `~/.openclaw/workspace/skills/zhang-yimou-skill/` |
+| 1. 剧本与流程清单 | `docs/01_剧本与流程清单.md`，同时列出人设图、场景图、故事版、九宫格、视频和剪辑检查项 |
+| 2. 镜头表与单元切分 | `docs/02_镜头表与单元切分.md`，拆镜号、景别、运镜、声音、时长和 Seedance 单元 |
+| 3. 站位图 | `blocking/` 或 `images/blocking_*.svg`，表达人物位置、机位、摄影轴线和压力方向 |
+| 4. 分镜表/故事版 | `storyboards/`，必须包含图片故事版或九宫格，不接受纯文字占位 |
+| 5. Seedance Prompt 逐单元 | `docs/05_Seedance_Prompt_逐单元.md`，按每个 10-15 秒视频单元生成 |
+| 6. 即梦 CLI 视频生成 | 先询问用户是否需要；需要时再填入即梦/Dreamina CLI 参数批量生成 |
+| 7. 自动剪辑 | 先询问用户是否需要；需要时输出剪辑 manifest、ffmpeg/剪映/CapCut 可执行方案 |
 
-```bash
-git clone https://github.com/Ye-Zayne/zhang-yimou-skill <对应路径>
-```
-
-</details>
-
-### 使用
-
-```text
-> 用张艺谋Skill把这个短剧项目做成导演版
-> 把这段剧情改成张艺谋启发的分镜脚本
-> 生成竖屏短剧的导演分镜表和 Seedance prompt
-```
-
----
-
-## 输出什么
-
-### 小任务默认输出
-
-1. **一句话导演判断**：这个故事真正拍的不是 X，而是 Y。
-2. **风格引擎**：主引擎 + 副引擎。
-3. **视觉母题表**：颜色、物件、空间、群像、声音。
-4. **正文生成**：剧本、分镜、故事版或视频 prompt。
-5. **反模式检查**：避免廉价“大红灯笼式”的表面模仿。
-
-### 完整项目输出
+推荐目录：
 
 ```text
 storyboard_pipeline/{项目名}/
 ├── 00_流程清单.md
 ├── docs/
-│   ├── 00A_导演风格设定.md
-│   ├── 01_规范剧本.md
-│   ├── 02_专业分镜脚本.md
-│   └── 04_Seedance_视频Prompt_15秒单元.md
 ├── characters/
 ├── scenes/
+├── blocking/
 ├── storyboards/
-├── director_sheets/
 ├── video_grids/
-└── videos/
+├── adapters/
+├── manifests/
+├── videos/
+└── edit/
 ```
 
-完整流程遵循：风格锁定 → 剧本规范化 → 专业分镜 → 导演分镜表 → 人物/场景设定 → 静态确认 → 视频 prompt → 视频宫格/视频。
+---
+
+## 安装
+
+```bash
+npx skills add Ye-Zayne/zhang-yimou-skill
+```
+
+手动安装时，把仓库复制到对应 runtime 的 skills 目录：
+
+| Runtime | 建议路径 |
+| --- | --- |
+| Codex | `~/.codex/skills/zhang-yimou-skill/` |
+| Claude Code | `~/.claude/skills/zhang-yimou-skill/` |
+| OpenClaw | `~/.openclaw/workspace/skills/zhang-yimou-skill/` |
+| Hermes Desktop | Hermes workspace skills 目录 |
+| Kimi / GLM / MiniMax | 使用 `agents/`、`adapters/`、`references/` 中的通用提示词与 manifest |
+
+---
+
+## 全模型适配
+
+这个 skill 不只服务一个模型。它把输出拆成稳定的 Markdown、SVG 图片、JSON manifest 和视频 prompt，方便不同 agent/runtime 读取：
+
+- Codex、Claude Code、OpenClaw、Hermes Desktop：读取 `SKILL.md`、`references/` 和案例目录。
+- MiniMax、Kimi、GLM、通义、豆包等大模型：使用“剧本 → 镜头 → 图片 → 视频 prompt”的分层上下文包。
+- Seedance、即梦/Dreamina、可灵、Runway、Pika 等视频模型：使用逐单元 prompt、参考图和无文字 3x3 宫格。
+- 剪映、CapCut、ffmpeg：使用可选剪辑 manifest 进行自动粗剪、排序、转场和音效占位。
 
 ---
 
 ## 蒸馏了什么
 
-### 9 个导演引擎
-
-| 引擎 | 一句话 |
+| 导演引擎 | 短剧转译 |
 | --- | --- |
-| **色彩即命运** | 颜色不是装饰，是人物关系和权力变化。 |
-| **仪式即牢笼** | 婚宴、晨会、排队、盖章等重复动作暴露控制。 |
-| **群像压迫个体** | 一个人被队列、墙面、旁观者和手机镜头吞没。 |
-| **空间先于台词** | 院落、楼道、窗口、宴席、办公室先决定权力。 |
-| **物件作为判决** | 碗、章、合同、红包、病历、钥匙在最后反转意义。 |
-| **女性策略性主体** | 女性不是被观看的受害者，而是在规则里计算、忍耐、误导、反击。 |
-| **小人物现实主义** | 目标很小，但追问到底会变成道德力量。 |
-| **类型片压力锅** | 一夜、一宴、一楼、一间办公室内连续升级。 |
-| **奇观服务命题** | 大场面必须让观众一眼看懂主题。 |
-
-### 表达方式
-
-- **导演判断**：先判断冲突，不急着堆画面。
-- **镜头策略**：景别、机位、站位、运镜都服务人物压力。
-- **短剧压缩**：前 3 秒给图像钩子，每 10-15 秒一次权力变化。
-- **可生产交付**：输出能直接进入分镜、图片生成、Seedance prompt 和剪辑流程。
-
----
-
-## 仓库结构
-
-```text
-.
-├── SKILL.md
-├── agents/
-│   └── openai.yaml
-├── assets/
-│   └── hero.svg
-└── references/
-    ├── director-system.md
-    ├── filmography-style-map.md
-    ├── output-templates.md
-    ├── pipeline-output-standard.md
-    ├── short-drama-playbook.md
-    ├── storyboard-board.md
-    └── visual-language-library.md
-```
+| 色彩即命运 | 红、黑、土黄、冷青不是装饰，是人物关系和权力变化 |
+| 仪式即牢笼 | 婚宴、课堂、晨会、排队、盖章等重复动作暴露控制 |
+| 群像压迫个体 | 一个人被队列、墙面、旁观者、手机镜头和空间吞没 |
+| 空间先于台词 | 院落、教室、门框、楼道、办公室先决定权力结构 |
+| 物件作为判决 | 碗、章、合同、红包、学生卡、铃声记录在最后反转意义 |
+| 女性/小人物策略主体 | 人物不靠喊口号胜利，而是在规则里忍耐、误导、反击 |
+| 奇观服务命题 | 大场面必须服务主题，不能只堆“电影感” |
 
 ---
 
